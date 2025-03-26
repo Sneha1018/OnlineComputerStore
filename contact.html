@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact and wishlist.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">SSComputers</h2>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html" class="home-button">HOME</a></li>
+                        <li><a href="about.html" class="about-button">ABOUT US</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-button">CATEGORIES</a>
+                            <div class="dropdown-content">
+                                <a href="laptops.html">Laptops</a>
+                                <a href="desktops.html">Desktops</a>
+                                <a href="accessories.html">Accessories</a>
+                                <a href="monitors.html">Monitors</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="wishlist.html">WISHLIST ♡</a></li>
+                        <li><a href="cart.html">CART</a></li> 
+                    </ul>
+                </div>
+            </div>
+
+            <header>
+                <h1>Contact Us</h1>
+            </header>
+
+            <section class="contact-form">
+                <p></p>Looking forward to hearing from you</p>
+                <label for="name">Name:</label>
+                <form action="submit_form.php" method="post">
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="topic">Topic</label>
+                        <select id="topic" name="topic">
+                            <option value="" selected>--- Please Select ---</option>
+                            <option value="info">Capture the information you need</option>
+                            <option value="add_remove">Add or remove any fields</option>
+                            <option value="custom_criteria">Your own custom criteria</option>
+                            <option value="required_field">Make any field required or not</option>
+                        </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <p id="successMessage" style="color:green; display: none;">Message sent successfully!</p>
+                    <script src="script.js"></script>
+                </form>
+            </section>
+</body>
+</html>
+
+
+
+
+
